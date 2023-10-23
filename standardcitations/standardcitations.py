@@ -16,6 +16,7 @@ from bibtexparser.bibdatabase import BibDatabase
 from lxml import html
 import requests
 from tqdm import tqdm
+import sys
 
 
 DESCRIPTION = """
@@ -202,6 +203,8 @@ def main(args):
     The main function that does all the heavy lifting.
     """
 
+    print("printing")
+
     bib_database = get_bibdatabase()
     worksheet = get_worksheet(args.input)
 
@@ -243,3 +246,11 @@ def parse_args(args):
     args = parser.parse_args(args)
 
     return args
+
+def process_args():
+    parse_args(sys.argv[1:])
+
+
+if __name__ == "__main__":
+    import sys
+    main(parse_args(sys.argv[1:]))

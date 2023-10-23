@@ -1,0 +1,12 @@
+bibtexparser==1.4.1
+certifi==2023.7.22
+charset-normalizer==3.3.1
+et-xmlfile==1.1.0
+idna==3.4
+jdcal==1.4.1
+lxml==4.9.3
+openpyxl==2.4.8
+pyparsing==3.1.1
+requests==2.31.0
+tqdm==4.31.1
+urllib3==2.0.7
