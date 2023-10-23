@@ -9,10 +9,10 @@ INSTALL_REQUIRE = ["openpyxl==2.4.8",
 DESCRIPTION = "This project generates BiBTeX-files for 3GPP specifications. Its a fork from martisak/3gpp-citations from Github"
 
 setup(
+    name='sdo-citations',
     author='Viswa Kumar',
     author_email='kspviswaphd@gmail.com',
-    name='sdo-citations',
-    version='0.1',
+    version='0.0.1',
     description=DESCRIPTION,
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
@@ -32,6 +32,6 @@ setup(
         'console_scripts': [
             'sdo-citations = standardcitations:process_args',
         ]
-    }
+    },
     python_requires='>=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, <4',
 )
