@@ -1,6 +1,4 @@
-# 3GPP Bibtex entry generator
-
-[![Build Status](https://travis-ci.org/martisak/3gpp-citations.svg?branch=master)](https://travis-ci.org/martisak/3gpp-citations) ![](https://img.shields.io/github/issues-raw/martisak/3gpp-citations.svg?style=flat) ![](https://img.shields.io/github/license/martisak/3gpp-citations.svg?style=flat) [![Coverage Status](https://coveralls.io/repos/github/martisak/3gpp-citations/badge.svg?branch=master)](https://coveralls.io/github/martisak/3gpp-citations?branch=master) [![Gitter chat](https://badges.gitter.im/martisak/3gpp-citations.png)](https://gitter.im/3gpp-citations/community "Gitter chat") [![](https://img.shields.io/pypi/v/3gpp-citations.svg?style=flat)](https://pypi.org/project/3gpp-citations/) ![](https://img.shields.io/pypi/dd/3gpp-citations.svg?style=flat) ![](https://img.shields.io/pypi/pyversions/3gpp-citations.svg?style=flat) [![HitCount](http://hits.dwyl.io/martisak/3gpp-citations.svg)](http://hits.dwyl.io/martisak/3gpp-citations) ![](https://img.shields.io/codeclimate/maintainability/martisak/3gpp-citations.svg?style=flat)
+# SDO Bibtex entry generator
 
 This project aims to generate [BiBTeX](http://www.bibtex.org/) files that
 can be used when citing [3GPP](3gpp.org) specifications. The input is a
@@ -8,18 +6,15 @@ document list exported from the [3GPP Portal](https://portal.3gpp.org/).
 
 ## Installation
 
-`pip install 3gpp-citations`
+`pip install sdo-citations`
 
-To also install test dependencies run
-
-`pip install 3gpp-citations[test]`
 
 ## Instructions
 
 1. Go to the [3GPP Portal](https://portal.3gpp.org/#55936-specifications)
 1. Generate the list of specifications you want.
 1. Download to Excel and save file
-1. Run `python 3gpp-citations.py -i exported.xlsx -o 3gpp.bib`
+1. Run `sdo-citations -i exported.xlsx -o 3gpp.bib`
 1. Use in LaTeX.
 
 *Optionally* use the provided `3gpp.bib` directly.
@@ -47,18 +42,7 @@ To also install test dependencies run
 }
 ~~~
 
-## Contribute
-
-See our [contribution guidelines](CONTRIBUTING.md) and our [Code of Conduct](CODE_OF_CONDUCT.md).
-
-## Other
-
-A presentation about the CI-pipeline used in this project [can be found here](https://martisak.gitlab.io/wasp_sw_course_testing/).
 
 ## Acknowledgment
 
-This project has been updated as part of the [WASP](http://wasp-sweden.org)
-[Software and Cloud Technology](http://wasp-sweden.org/graduate-school/courses/software-and-cloud-technology-spring-2019/) course.
-
-This work was partially supported by the Wallenberg AI, Autonomous Systems and
-Software Program (WASP) funded by the Knut and Alice Wallenberg Foundation.
+This project was forked from [martisak/3gpp-citations](https://github.com/martisak/3gpp-citations)

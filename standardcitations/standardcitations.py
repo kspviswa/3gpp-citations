@@ -248,7 +248,7 @@ def parse_args(args):
     return args
 
 def process_args():
-    parse_args(sys.argv[1:])
+    main(parse_args(sys.argv[1:]))
 
 
 if __name__ == "__main__":
